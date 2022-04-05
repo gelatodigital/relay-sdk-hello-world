@@ -52,6 +52,16 @@ export const getAddressBookByNetwork = (network: string) => {
         USDC: "",
       };
 
+    case "boba":
+      return {
+        GELATO: "0x91f2A140cA47DdF438B9c583b7E71987525019bB",
+        GELATO_RELAY: "0x25aD59adbe00C2d80c86d01e2E05e1294DA84823",
+        GELATO_RELAY_TRANSIT: "0x5c54A5C104f90f5F987FeE09e3C579F40AC43301",
+        HELLO_WORLD: "0x79A0cB573D3Db184752511969F1b869A184EA445",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+
     default: {
       throw new Error(`addressBooks: network: ${network} not supported`);
     }

@@ -38,6 +38,10 @@ const config: HardhatUserConfig = {
       chainId: 80001,
       url: `https://rpc-mumbai.maticvigil.com/`,
     },
+    boba: {
+      chainId: 288,
+      url: `https://mainnet.boba.network`,
+    },
   },
 
   solidity: {
