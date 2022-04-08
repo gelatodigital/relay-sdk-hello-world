@@ -29,6 +29,11 @@ const config: HardhatUserConfig = {
       url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_ID}`,
     },
 
+    cronos: {
+      chainId: 25,
+      url: "https://evm.cronos.org",
+    },
+
     kovan: {
       chainId: 42,
       url: `https://eth-kovan.alchemyapi.io/v2/${ALCHEMY_ID}`,
