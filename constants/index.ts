@@ -80,7 +80,17 @@ export const getAddressBookByNetwork = (network: string) => {
         ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
         USDC: "",
       };
-
+    
+    case "fantom":
+      return {
+        GELATO: "0xebA27A2301975FF5BF7864b99F55A4f7A457ED10",
+        GELATO_RELAY: "0x62B1a88CCc6BC5e6FF91FB2FCD29Ab4F819b35C6",
+        GELATO_RELAY_TRANSIT: "0xFbf1CA2be769b79BE01e48F509107dcACb9ae11b",
+        HELLO_WORLD: "0x9593C4c2B78f0d393e933870FBfb585b893eFD4B",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+      
     default: {
       throw new Error(`addressBooks: network: ${network} not supported`);
     }
