@@ -63,6 +63,21 @@ const config: HardhatUserConfig = {
       url: "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
       chainId: 2001,
     },
+
+    evmos: {
+      url: "https://eth.bd.evmos.org:8545",
+      chainId: 9001,
+    },
+
+    moonriver: {
+      url: "https://moonriver-rpc.dwellir.com",
+      chainId: 1285,
+    },
+
+    moonbeam: {
+      url: "https://rpc.api.moonbeam.network",
+      chainId: 1284,
+    },
   },
 
   solidity: {
