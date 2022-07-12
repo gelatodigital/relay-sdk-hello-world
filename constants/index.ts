@@ -80,7 +80,7 @@ export const getAddressBookByNetwork = (network: string) => {
         ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
         USDC: "",
       };
-    
+
     case "fantom":
       return {
         GELATO: "0xebA27A2301975FF5BF7864b99F55A4f7A457ED10",
@@ -90,7 +90,47 @@ export const getAddressBookByNetwork = (network: string) => {
         ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
         USDC: "",
       };
-      
+
+    case "milkomeda":
+      return {
+        GELATO: "0x91f2A140cA47DdF438B9c583b7E71987525019bB",
+        GELATO_RELAY: "0x24D677f8A59A486BfC6d87E9453C4f1fEfcB0958",
+        GELATO_RELAY_TRANSIT: "0x24D677f8A59A486BfC6d87E9453C4f1fEfcB0958",
+        HELLO_WORLD: "0x79A0cB573D3Db184752511969F1b869A184EA445",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+
+    case "evmos":
+      return {
+        GELATO: "0x91f2A140cA47DdF438B9c583b7E71987525019bB",
+        GELATO_RELAY: "0x24D677f8A59A486BfC6d87E9453C4f1fEfcB0958",
+        GELATO_RELAY_TRANSIT: "0x24D677f8A59A486BfC6d87E9453C4f1fEfcB0958",
+        HELLO_WORLD: "0x0f92f38A73e8f1f226517C14126F95f5Bd3678e8",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+
+    case "moonbeam":
+      return {
+        GELATO: "0x91f2A140cA47DdF438B9c583b7E71987525019bB",
+        GELATO_RELAY: "0x36225733276425f5DbA88977Aef45f042BACB953",
+        GELATO_RELAY_TRANSIT: "0x36225733276425f5DbA88977Aef45f042BACB953",
+        HELLO_WORLD: "0x3652b3D7c814D331974a3Ff70C8038971727cd63",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+
+    case "moonriver":
+      return {
+        GELATO: "0x91f2A140cA47DdF438B9c583b7E71987525019bB",
+        GELATO_RELAY: "0xb34758F24fFEf132dc5831C2Cd9A0a5e120CD564",
+        GELATO_RELAY_TRANSIT: "0xb34758F24fFEf132dc5831C2Cd9A0a5e120CD564",
+        HELLO_WORLD: "0x45C89Ce6123fC15E7DB92EED7A6779CA04861AD6",
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+        USDC: "",
+      };
+
     default: {
       throw new Error(`addressBooks: network: ${network} not supported`);
     }

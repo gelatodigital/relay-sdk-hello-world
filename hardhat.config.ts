@@ -53,9 +53,30 @@ const config: HardhatUserConfig = {
       chainId: 80001,
       url: `https://rpc-mumbai.maticvigil.com/`,
     },
+
     boba: {
       chainId: 288,
       url: `https://mainnet.boba.network`,
+    },
+
+    milkomeda: {
+      url: "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
+      chainId: 2001,
+    },
+
+    evmos: {
+      url: "https://eth.bd.evmos.org:8545",
+      chainId: 9001,
+    },
+
+    moonriver: {
+      url: "https://moonriver-rpc.dwellir.com",
+      chainId: 1285,
+    },
+
+    moonbeam: {
+      url: "https://rpc.api.moonbeam.network",
+      chainId: 1284,
     },
   },
 

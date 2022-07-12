@@ -5,9 +5,7 @@ import { getAddressBookByNetwork } from "../constants";
 import { BigNumber, Contract } from "ethers";
 
 async function main() {
-  const { ETH, HELLO_WORLD, GELATO_RELAY_TRANSIT } = getAddressBookByNetwork(
-    hre.network.name
-  );
+  const { ETH, HELLO_WORLD, GELATO_RELAY_TRANSIT } = getAddressBookByNetwork(hre.network.name);
 
   // Verify that current network is supported by Gelato Multichain Relay
   const chainId = hre.network.config.chainId ?? 0;
@@ -39,10 +37,7 @@ async function main() {
   );
 
   // Encode our function call
-  const data = helloWorld.interface.encodeFunctionData("helloWorld", [
-    estimatedFees,
-    ETH,
-  ]);
+  const data = helloWorld.interface.encodeFunctionData("helloWorld", [estimatedFees, ETH]);
 
   // Send our tx to Gelato Relay
   console.log(`Sending Hello World tx to Gelato Relay...`);
