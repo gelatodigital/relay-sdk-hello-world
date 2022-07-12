@@ -53,9 +53,15 @@ const config: HardhatUserConfig = {
       chainId: 80001,
       url: `https://rpc-mumbai.maticvigil.com/`,
     },
+
     boba: {
       chainId: 288,
       url: `https://mainnet.boba.network`,
+    },
+
+    milkomeda: {
+      url: "https://rpc-mainnet-cardano-evm.c1.milkomeda.com",
+      chainId: 2001,
     },
   },
 
